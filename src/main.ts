@@ -22,11 +22,11 @@ function displayMovies(movies: Movie[]) {
       const tr = document.createElement('tr');
 
       const td1 = document.createElement('td');
-      td1.textContent = movie.title;
+      td1.textContent = `${movie.title}`;
       tr.appendChild(td1);
       
       const td2 = document.createElement('td');
-      td2.textContent = movie.duration.toString();
+      td2.textContent = `${movie.duration}`.toString();
       tr.appendChild(td2);
       
       const td3 = document.createElement('td');
